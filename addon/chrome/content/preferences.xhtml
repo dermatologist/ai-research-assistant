@@ -16,7 +16,7 @@
     <box class="groupbox-body" flex="1">
       <hbox>
         <label>&zotero.__addonRef__.pref.OPENAI_MODEL.label;</label>
-        <radiogroup
+        <!-- <radiogroup
           id="zotero-prefpane-__addonRef__-OPENAI_MODEL"
           label="&zotero.__addonRef__.pref.OPENAI_MODEL.label;"
           preference="extensions.zotero.__addonRef__.OPENAI_MODEL"
@@ -27,7 +27,13 @@
             value="gpt-4-1106-preview"
             id="zotero-prefpane-__addonRef__-OPENAI_MODEL-1"
           />
-        </radiogroup>
+        </radiogroup> -->
+        <html:input
+          type="text"
+          id="zotero-prefpane-__addonRef__-OPENAI_MODEL"
+          preference="extensions.zotero.__addonRef__.OPENAI_MODEL"
+          value="gpt-4-0613" 
+        ></html:input>
       </hbox>
       <hbox>
         <label>&zotero.__addonRef__.pref.OPENAI_API_KEY.label;</label>
